@@ -1,0 +1,23 @@
+Organizations:
+  - &Org1
+    Name: Org1
+
+    # Probability to accept nxt transaction. based on the historical data
+    Pr: 0.995
+
+  - &Org2
+    Name: Org2
+
+    # Probability to accept nxt transaction. based on the historical data
+    Pr: 0.99
+
+  - &Org3
+    Name: Org3
+
+    # Probability to accept nxt transaction. based on the historical data
+    Pr: 0.985
+
+Policies:
+  Endorsement:
+    Type: Signature
+    Rule: "(Org2 AND Org3)OR(Org1 AND Org2)"

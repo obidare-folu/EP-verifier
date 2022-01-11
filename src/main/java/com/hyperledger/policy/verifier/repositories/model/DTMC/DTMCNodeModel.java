@@ -1,4 +1,4 @@
-package com.hyperledger.policy.verifier.repositories.model;
+package com.hyperledger.policy.verifier.repositories.model.DTMC;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -10,7 +10,5 @@ import lombok.Setter;
 public class DTMCNodeModel {
     private DTMCNodeModel parent;
     private boolean refusalParent;
-    private double totalSum;
-    private double weight;
     private int id;
 }
